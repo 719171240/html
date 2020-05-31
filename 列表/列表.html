@@ -4,10 +4,14 @@
 		<meta charset="utf-8">
 		<title></title>
 		<style type="text/css">
-		*{
-			padding: 0;
-			margin: 0;
-		}
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			li{
+				list-style: none;
+				float: left;
+			}
 			.item{
 				height: 60px;
 				width: 800px;
@@ -16,7 +20,7 @@
 				
 				
 			}
-			a{
+			.item li a{
 				text-decoration: none;
 				display: inline-block;
 				background-color: transparent;
@@ -29,18 +33,18 @@
 				text-overflow: ellipsis;
 				white-space: nowrap;
 			}
-			a:hover{
+			.item li a:hover{
 				background-color: blue;
-
+				
 			}
 		</style>
 	</head>
 	<body>
-		<div class="item">
-			<a href="#" class="item1">首页</a>
-			<a href="#" class="item2">周边游</a>
-			<a href="#" class="item3">出境游</a>
-			<a href="#" class="item4">独家栏目的更多选项</a>
-		</div>
+		<ul class="item">
+			<li><a href="#" class="item1">首页</a></li>
+			<li><a href="#" class="item2">周边游</a></li>
+			<li><a href="#" class="item3">出境游</a></li>
+			<li><a href="#" class="item4">独家栏目的更多选项</a></li>
+		</ul>
 	</body>
 </html>
