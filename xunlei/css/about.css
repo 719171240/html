@@ -1,0 +1,50 @@
+header{
+	height: 431px;
+	background: url(../img/about-bg.jpg);
+}
+.topcontainer{
+	height: 64px;
+	background: rgba(0,0,0,0);
+	transition: all .5;
+}
+.topcontainer:hover{
+	background: rgba(0,0,0,1);
+}
+h1.logo{
+	width: 78px;
+	height: 37px;
+	float: left;
+}
+h1.logo img{
+	width:100%;
+}
+.menu{
+	float:right;
+}
+.menu li{
+	float: left;
+	margin-left: 30px;
+	padding: 12px 0;
+	position: relative;
+}
+.menu li::after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	position: absolute;
+	bottom: 0;
+	opacity: 0;
+	transform: scale(0);
+	transition: all .5s;
+}
+.menu li:hover::after{
+	opacity: 1;
+	transform: scale(1);
+}
+.menu li a{
+	color: #fff;
+	text-decoration: none;
+	padding: 0 13px;
+}
